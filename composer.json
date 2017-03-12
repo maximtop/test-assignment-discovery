@@ -1,0 +1,35 @@
+{
+  "name": "maximtop/test-otkrytie",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Topciu Maxim",
+      "email": "maximtop@gmail.com"
+    }
+  ],
+  "scripts": {
+    "phpcs": "vendor/bin/phpcs --standard=PSR2 src"
+  },
+  "autoload": {
+    "psr-4": {
+      "Counter\\": "src/"
+    },
+    "files": [
+      "src/BalanceUpdater.php",
+      "src/User.php"
+    ]
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/nuovo/spreadsheet-reader"
+    }
+  ],
+  "require": {
+    "phpoffice/phpspreadsheet": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "squizlabs/php_codesniffer": "*"
+  }
+}
